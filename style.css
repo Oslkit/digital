@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 17px;
+    max-width: 1200px;
+    width: 100%;
+    
+}
+
+.left_container {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo {
+    margin-right: 48px;
+}
+.nav {
+    display: flex;
+    gap: 48px;
+   
+}
+
+.nav_link {
+    text-decoration: none;
+}
+
+.button {
+    position: relative;
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 11px 30px 15px 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    /* background-color: #2F2F2F; */
+    
+    
+}
+.button:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+/* .button:hover {
+    background-color: #726e6e;
+} */
+
+.button:active {
+    /* transform: scale(0.9); */
+    /* color: #2F2F2F; */
+    /* transform: translateX(50px); */
+}
+
+.button::after {
+    content: '';
+    position: absolute;
+    transition: 0.3s;
+    right: 15px;
+    top: 14px;
+    width: 10px;
+    height: 10px;
+    background-image: url(/right-arrow.png);
+    background-size: cover;
+}
+
+
+.button:active::after {
+    transform: translateX(5px);
+    transition: 0.3s;
+}
+
+/* ------experience--------- */
+
+
+.experience {
+    display: flex;
+    height: 740px;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+
+
+
+}
+
+
+.experience__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+
+.experience__img {
+    position: relative;
+    background-color: grey;
+    width: 50%;
+
+}
+
+.man {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 325px;
+    height: 325px;
+    border-radius: 30px;
+    background-color: red;
+    z-index: 1;
+}
+
+.woman {
+    position: absolute;
+    top: 100px;
+    left: 169px;
+    width: 420px;
+    height: 420px;
+    border-radius: 30px;
+    background-color: blue;
+    background-image: url(/src/woman.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+}
+
+
+.author {
+    position: absolute;
+    left: -36px;
+    top: 15px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 5px 8px;
+}
+
+.author__img {
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: aqua;
+}
+
+.margin-none {
+    margin: 0;
+}
+
+
+/* .author__title {
+    margin: 0;
+}
+
+.author__subtitle {
+    margin: 0;
+} */
+
+.example {
+    width: 100%;
+    height: auto;
+}
